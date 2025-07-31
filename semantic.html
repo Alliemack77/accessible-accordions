@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS -->
+    <script src="semantic.js" defer></script>
+
+    <title>Making an Accordion Accessable | CSS{de}Coder</title>
+</head>
+<body>
+    <h1 class="page-title">Accordion A11y with Native HTML Elements</h1>
+    <p>Use the Details and Summary Elements for A11y Out of the Box!</p>
+    
+    <span id="accordion-label" hidden>Summer Program Information</span>
+    <section class="accordions" aria-labelledby="accordion-label">
+        <details class="accordion">
+            <summary class="accordion-trigger">
+                <div class="na-accordion-button" aria-hidden="true">
+                    <img class="icon-plus" src="./images/plus-icon.png" alt="" height="42" width="42"/>
+                </div>
+                <span class="accordion-heading">Course Curriculum</span>
+            </summary>
+            <p class="accordion-panel">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, <a class="button" href="/learn/undergraduate-programs/studio-art/minor">voluptatum</a>! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, voluptatum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, voluptatum <a class="button" href="/learn/undergraduate-programs/studio-art/courses">amet consectetur</a>!</p>
+        </details>
+        <details class="accordion">
+            <summary class="accordion-trigger">
+                <div class="na-accordion-button" aria-hidden="true">
+                    <img class="icon-plus" src="./images/plus-icon.png" alt="" height="42" width="42"/>
+                </div>
+                <span class="accordion-heading">Internships & Opportunities</span>
+            </summary>
+            <p class="accordion-panel">Sapien convallis iaculis arcu aenean conubia facilisis pretium ipsum. Ultricies in porttitor facilisi sagittis sapien magna facilisis congue ridiculus. Netus cras rhoncus ipsum per potenti; libero eleifend vel. Nostra magna nisl porttitor facilisi ante dignissim magnis.</p>
+        </details>
+        <details class="accordion">
+            <summary class="accordion-trigger">
+                <div class="na-accordion-button" aria-hidden="true">
+                    <img class="icon-plus" src="./images/plus-icon.png" alt="" height="42" width="42"/>
+                </div>
+                <span class="accordion-heading">Study Abroad</span>
+            </summary>
+            <p class="accordion-panel">Natoque ligula porttitor vestibulum fames curabitur pellentesque dis vulputate lacinia. Vulputate vehicula nascetur et enim fames posuere consequat ut sollicitudin</p>
+        </details>
+       
+    </section>
+</body>
+</html>
